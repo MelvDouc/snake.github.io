@@ -1,0 +1,23 @@
+:root {
+    --snakeBorder: .25vmin solid black;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+canvas {
+    border: 1px solid black;
+}
