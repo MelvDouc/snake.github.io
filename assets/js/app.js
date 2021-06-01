@@ -115,10 +115,10 @@ function isCollision(newHead) {
     return false;
   const collision = SNAKE.find(s => s.x === newHead.x && s.y === newHead.y);
   if (collision) {
-    console.log(`
-    collision (x, y): ${collision.x}, ${collision.y},
-    newHead (x, y): ${newHead.x}, ${newHead.y}
-    `)
+    alert("GAME OVER");
+    const playAgainPrompt = confirm("Play again?");
+    if (playAgainPrompt)
+      location.reload();
     return true;
   }
   return false;
